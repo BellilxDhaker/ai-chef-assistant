@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+#  AI Chef Assistant
 
-## Getting Started
+AI Chef Assistant is a smart web application that helps users generate personalized meal plans based on their preferences, ingredients, or dietary goals. It leverages AI to provide structured recipes, meal suggestions, and a smooth user experience.
 
-First, run the development server:
+<a href="https://ai-chef-assistant-tau.vercel.app/" target="_blank">
+  <img src="./public/preview.png" alt="AI Chef Assistant Preview" />
+</a>
 
+
+## ✨ Features
+
+- 🍽️ Generate personalized meal plans  
+- 🧠 AI-powered recipe suggestions  
+- ⚡ Fast and responsive UI  
+- 🎯 Custom inputs (ingredients)  
+- 📱 Mobile-friendly design  
+- 🌙 Light/Dark mode support  
+
+
+## 🛠️ Tech Stack
+
+- Frontend: Next.js, React, TypeScript  
+- Styling: Tailwind CSS  
+- Deployment: Vercel  
+- AI Integration: OpenAI / AI API  
+
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/BellilxDhaker/ai-chef-assistant.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Navigate to the project directory
+```bash
+cd ai-chef-assistant
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Install dependencies
+```bash
+npm install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Run the development server
+```bash
+npm run dev
+```
 
-## Learn More
+### 5. Open in browser
+```
+http://localhost:3000
+```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📦 Build for Production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+```bash
+npm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🚀 Deployment
+
+This project is deployed on Vercel. Any push to the main branch will trigger automatic deployment.
+
+
+
+## 🚀 Live Demo
+
+👉 https://ai-chef-assistant-tau.vercel.app/
+
+
+
+## 📄 License
+
+MIT License
