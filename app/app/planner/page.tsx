@@ -84,16 +84,49 @@ interface IngredientChip {
   name: string;
 }
 
-interface MealPlan {
+interface NutritionValue {
+  value: number | string;
+  unit: string;
+}
+
+interface Macronutrients {
+  protein: NutritionValue;
+  carbohydrates: NutritionValue;
+  fats: NutritionValue;
+}
+
+interface Nutrition {
+  servingSize: string;
+  calories: NutritionValue;
+  macronutrients: Macronutrients;
+}
+
+interface RecipeIngredient {
+  name: string;
+  quantity: string;
+  unit: string;
+}
+
+interface RecipeInstruction {
+  step: number;
+  instruction: string;
+}
+
+interface Recipe {
   title: string;
-  steps: string[];
-  nutrition: {
-    calories: string;
-    protein: string;
-    carbs: string;
-    fats: string;
-  };
-  rawContent: string;
+  description: string;
+  servings: string;
+  prepTime: string;
+  cookTime: string;
+  ingredients: RecipeIngredient[];
+  instructions: RecipeInstruction[];
+  nutrition: Nutrition;
+}
+
+interface MealPlan {
+  success: boolean;
+  recipe: Recipe;
+  message?: string;
 }
 
 export default function AppPage() {
